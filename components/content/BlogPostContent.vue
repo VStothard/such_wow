@@ -1,5 +1,6 @@
 <template>
     <div>
+        <PageHeader />
         {{content}}
     </div>
 </template>

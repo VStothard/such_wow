@@ -1,5 +1,6 @@
 <template>
     <section>
-        Business hub 
+        <BlogFilter />
+        <BlogTileGrid />
     </section>
 </template>

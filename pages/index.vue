@@ -1,5 +1,5 @@
 <template>
-  <section class="max-w-2xl mx-auto border">
+  <section>
     <BlogPostCarousel></BlogPostCarousel>
     <ImageWithText />
     <BlogTileGrid />
