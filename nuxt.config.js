@@ -36,7 +36,8 @@ module.exports = {
   plugins: [
     "~/plugins/vuex.js",
     "~/plugins/global-components.js",
-    '~/tailwind.js'
+    '~/tailwind.js',
+    { src: '~/plugins/vue-carousel', ssr: false }
   ],
 
   /*
@@ -70,6 +71,9 @@ module.exports = {
       //     exclude: /(node_modules)/
       //   })
       // }
+    },
+    build: {
+      vendor: ['vue-carousel']
     }
   }
 }
