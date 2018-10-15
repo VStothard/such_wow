@@ -3,10 +3,10 @@
     <div class="page-wrapper">
       <Nav></Nav>
       <nuxt/>
-      <InstaFeed></InstaFeed>
-      <ContactBar></ContactBar>
-      <Footer></Footer>
     </div>
+    <InstaFeed></InstaFeed>
+    <ContactBar></ContactBar>
+    <Footer></Footer>
   </div>
 </template>
 

@@ -1,5 +1,5 @@
 <template>
     <section>
-        <BlogPost />
+        <BlogPost class="content-padding"/>
     </section>
 </template>

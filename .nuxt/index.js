@@ -11,11 +11,10 @@ import { setContext, getLocation, getRouteData } from './utils'
 import { createStore } from './store.js'
 
 /* Plugins */
-import nuxt_plugin_axios_9217e088 from 'nuxt_plugin_axios_9217e088' // Source: ./axios.js
+import nuxt_plugin_axios_6acf4f5e from 'nuxt_plugin_axios_6acf4f5e' // Source: ./axios.js
 import nuxt_plugin_vuex_165c10cf from 'nuxt_plugin_vuex_165c10cf' // Source: ../plugins/vuex.js
 import nuxt_plugin_globalcomponents_52ce1226 from 'nuxt_plugin_globalcomponents_52ce1226' // Source: ../plugins/global-components.js
 import nuxt_plugin_tailwind_22c1a258 from 'nuxt_plugin_tailwind_22c1a258' // Source: ../tailwind.js
-import nuxt_plugin_vuecarousel_6c010c3d from 'nuxt_plugin_vuecarousel_6c010c3d' // Source: ../plugins/vue-carousel (ssr: false)
 
 
 // Component: <no-ssr>
@@ -159,14 +158,11 @@ async function createApp (ssrContext) {
 
   // Plugin execution
   
-  if (typeof nuxt_plugin_axios_9217e088 === 'function') await nuxt_plugin_axios_9217e088(app.context, inject)
+  if (typeof nuxt_plugin_axios_6acf4f5e === 'function') await nuxt_plugin_axios_6acf4f5e(app.context, inject)
   if (typeof nuxt_plugin_vuex_165c10cf === 'function') await nuxt_plugin_vuex_165c10cf(app.context, inject)
   if (typeof nuxt_plugin_globalcomponents_52ce1226 === 'function') await nuxt_plugin_globalcomponents_52ce1226(app.context, inject)
   if (typeof nuxt_plugin_tailwind_22c1a258 === 'function') await nuxt_plugin_tailwind_22c1a258(app.context, inject)
   
-  if (process.client) { 
-    if (typeof nuxt_plugin_vuecarousel_6c010c3d === 'function') await nuxt_plugin_vuecarousel_6c010c3d(app.context, inject)
-  }
 
   // If server-side, wait for async component to be resolved first
   if (process.server && ssrContext && ssrContext.url) {
