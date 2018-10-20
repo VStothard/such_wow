@@ -1,7 +1,9 @@
 <template>
     <div>
         <h1>{{headline}}</h1>
-        <p>{{subheadline}}</p>
+        <div class="mt-2">
+            <p class="">{{subheadline}}</p>
+        </div>
     </div>
 </template>
 
@@ -13,7 +15,7 @@ export default {
     data() {
         return {
             headline: "this is the headline",
-            subheadline: "and yah know this is the sub text "
+            subheadline: "and yah know this is the sub text"
         }
     }
 }

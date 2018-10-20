@@ -1,7 +1,5 @@
 <template>
     <section>
-        carousel
+        Carousel
     </section>
 </template>
-
-

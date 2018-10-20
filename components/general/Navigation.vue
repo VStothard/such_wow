@@ -1,10 +1,18 @@
 <template>
-    <nav class="flex flex-wrap justify-between items-center">
-        <nuxt-link to="/" class="uppercase text-xl font-semibold tracking-wide cursor no-underline text-black hover:text-grey-light">PHOEBE</nuxt-link>
-        <div class="flex">
-            <div class="p-2 md:py-6 px-4 uppercase text-sm cursor-pointer hover:text-grey-light">BLOG</div>
-            <div class="p-2 md:py-6 px-4 uppercase text-sm cursor-pointer hover:text-grey-light">VIDEO</div>
-            <div class="p-2 md:py-6 py-4 pl-4 pr-0 uppercase text-sm cursor-pointer hover:text-grey-light">SOCIAL</div>
+    <nav class="block md:flex justify-between items-center py-4 content-padding">
+        <div>
+            <h1 class="uppercase">phoebe.</h1>
+        </div>
+        <div class="mt-2 md:mt-0 uppercase">
+            <span class="pr-1 md:pr-4">    
+                <nuxt-link to="/blog">blog</nuxt-link>
+            </span>
+            <span class="px-1 md:px-4">    
+                <nuxt-link to="/blog">blog</nuxt-link>
+            </span>
+            <span class="pl-1 md:pl-4">    
+                <nuxt-link to="/blog">blog</nuxt-link>
+            </span>
         </div>
     </nav>
 </template>
