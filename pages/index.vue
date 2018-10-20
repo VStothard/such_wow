@@ -1,10 +1,10 @@
 <template>
   <section>
-    <BlogPostCarousel></BlogPostCarousel>
-    <ImageWithText />
-    <BlogTileGrid />
-    <InstaFeed></InstaFeed>
-    <ContactBar></ContactBar>
+    <BlogPostCarousel class="mt-8"></BlogPostCarousel>
+    <ImageWithText class="mt-8 max-w-lg mx-auto"/>
+    <BlogTileGrid class="mt-8" />
+    <InstaFeed class="mt-8"></InstaFeed>
+    <ContactBar class="mt-8"></ContactBar>
   </section>
 </template>
 
