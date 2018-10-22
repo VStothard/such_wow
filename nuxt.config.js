@@ -1,7 +1,14 @@
 const pkg = require('./package')
+const dotenv = require('dotenv').config();
 
 module.exports = {
   mode: 'universal',
+
+  env: {
+    spaceID: process.env.SPACE_ID,
+    accessToken: process.env.ACCESS_TOKEN,
+    blogPost: process.env.BLOG_POST
+  },
 
   /*
   ** Headers of the page

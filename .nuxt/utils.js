@@ -125,7 +125,7 @@ export async function setContext(app, context) {
       payload: context.payload,
       error: context.error,
       base: '/',
-      env: {}
+      env: {"spaceID":"hn9vczb123xt","accessToken":"cfcb7b2079a91a5ec4ae4247f1ef61874b6be2349c3630968af18f8921ba54f0","blogPost":"blogPost"}
     }
     // Only set once
     if (context.req) app.context.req = context.req
